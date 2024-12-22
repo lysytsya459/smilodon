@@ -9,7 +9,12 @@
 </head>
 
 <body>
-	Board /{{ .Board }}/
+	{{ template "header" }}
+	<p>Board /{{ .Board }}/</p>
+
+	<a href="/{{ .Board }}/1234567890">Thread 1234567890</a>
+
+	{{ template "footer" }}
 </body>
 
 </html>
